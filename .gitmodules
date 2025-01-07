@@ -1,0 +1,6 @@
+[submodule "epg-grabber"]
+	path = epg-grabber
+	url = https://github.com/dyordsabuzo/epg
+[submodule "tempest"]
+	path = tempest
+	url = https://github.com/K-vanc/Tempest-EPG-Generator
