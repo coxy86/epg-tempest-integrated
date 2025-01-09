@@ -2,9 +2,14 @@
   "name": "epg-tempest-integrated",
   "version": "1.0.0",
   "main": "index.js",
+  "workspaces": [
+    "epg-grabber"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "merge": "node index.js"
+    "grab": "cd epg-grabber && npm run grab -- --site=foxtel.com.au",
+    "merge": "node index.js",
+    "grab-n-merge": "npm run grab && npm run merge"
   },
   "author": "",
   "license": "ISC",
