@@ -57,7 +57,7 @@ const merge = async (guide, tempest) => {
 
     const builder = new xml2js.Builder()
     const updatedXml = builder.buildObject(guide)
-    await fs.promises.writeFile('./merged-guide.xml', updatedXml)
+    await fs.promises.writeFile('./epg-grabber/epg/guidefinal.xml', updatedXml)
 
 }
 
